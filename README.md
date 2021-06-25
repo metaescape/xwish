@@ -6,7 +6,7 @@
   - wmctrl
   - transset(optional)
 
-  # i3 example
+  # i3 examples
   ## use fzf to select window
   add lines below to your i3 config, replace $super+comma to your key, then you can select or swap current window to target window via fzf in a floating terminal.
   ```bash
