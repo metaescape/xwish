@@ -52,3 +52,8 @@ focus_next_win_in_workspace() {
     local next=$(get_next_win_in_workspace)
     focus_to_win_by_id "$next"
 }
+
+is_active_window_full_screen() {
+    local id=$(get_active_win_id)
+    xprop -id "$id" | grep "_NET_WM_STATE(ATOM) .* _NET_WM_STATE_FULLSCREEN"
+}
