@@ -1,9 +1,10 @@
 # X window interface in Bash
+[select-window](./screenshots/fzf-select-windows.png)
 
-<div align=center>![select-window](./screenshots/fzf-select-windows.png)</div>
-  this repo is a collection of bash scripts/functions I used along with i3wm
+this repo is a collection of bash scripts/functions I have been using along with i3wm
 
   dependence:
+  - fzf
   - xdotool
   - wmctrl
   - transset(optional)
@@ -20,4 +21,4 @@ bindsym $super+comma exec gnome-terminal --geometry=80x15 --title='select_window
 ```bash
  bindsym F3 exec /path/to/xwish/focus_next_win.sh`
  ```
-  add this to your i3 config, then you can use F3 to goto next unfocused window in current workspace, this is very useful when you prefer to open 2 or 3 windows in one workspace, instead of bind four keys repectively for `focus {left, right, up, down}` , this only consume one keybind.
+  add this to your i3 config, then you can use F3 to goto next unfocused window in current workspace, this is very useful if you prefer to open 2 or 3 windows in one workspace, instead of bind four keys repectively for `focus {left, right, up, down}` , this only consume one keybinding.
