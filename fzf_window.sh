@@ -9,6 +9,7 @@ current_win_id=$(cat /tmp/current_win_id)
  echo "$win" | grep '^/' > /dev/null && { #swap
      id=$(echo $win | tail -1 | cut -d ' ' -f2) #second
      i3-msg "[id=$current_win_id] swap container with id $id"
+     i3-msg "restart" #fix window tree update delay
      exit;
  } 
  echo "$win" | grep '^,' > /dev/null && { #switch
