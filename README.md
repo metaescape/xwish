@@ -1,4 +1,4 @@
-# X window interface in Bash
+  # X window interface in Bash
 
 screenshot
 <p align="center">
@@ -11,6 +11,7 @@ dependence:
 - fzf
 - xdotool
 - wmctrl
+- xprop
 - transset(optional)
 
   # i3 examples
@@ -25,4 +26,4 @@ dependence:
   ```bash
   bindsym F3 exec /path/to/xwish/focus_next_win.sh`
   ```
-  add this in your i3 config, then you can use F3 to goto next unfocused window in current workspace, this is very useful if you prefer to open 2 or 3 windows in one workspace, instead of bind four keys repectively for `focus {left, right, up, down}` , this only consume one keybinding.
+  add this in your i3 config, then you can use F3 to goto next unfocused window in current workspace, this is very useful if you prefer to open 2 or 3 windows in one workspace, instead of binding four keys repectively for `focus {left, right, up, down}` , this consumes only one keybinding.
